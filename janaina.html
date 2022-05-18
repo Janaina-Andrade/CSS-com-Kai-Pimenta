@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.css"
+<title></title>
+</head>
+<script src="https://kit.fontawesome.com/b957cfeba8.js" crossorigin="anonymous"></script>
+<body>
+    <header>
+        <ul>
+            <li>
+                <img src="./Imagens/Logo Floral Minimalista Marrom.png" width="30%"
+            </li>
+            <li>
+                <a target="_blank" href="https://github.com/Janaina-Andrade">Github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:janalimapereira.jalp@gmail.com">Email</a>
+            </li>
+            <li><a target="_blank" href="https://wa.me/+5511947727729">Whatsapp</a>
+            </li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/jana%C3%ADna-andrade-lima-pereira-88b05421b/">LinkedIn</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Janaina Andrade</h1>
+                <h5>Quality Assurance (QA)</h5>
+            </div>
+            <div onclick= "displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+            <div style="display: none;" id="about" class="detalhes">
+            <div  id="resume">
+                <img src="./Imagens/Janaina.jpg" width="25%">
+                <p>
+                    Sou uma mulher em transição de carreira, estudante em tempo integral no momento.
+                    Me dedico ao estudo de linguagens, IDEs e tipos de testes utilizados no mercado em geral, já
+                    possuo vivência em automação de testes com uso de Cucumber, Capybara, Selenium, Java e Ruby.
+                    Já interajo com Docker containers, sobre IDEs utilizo Eclipse, mas possuo experiência em IntelliJ e VS Code. Sei trabalhar com versionamento de código no Github.
+                    Neste momento me encontro aberta para oportunidades como trainee ou Júnior na área de TI, meu foco tem sido QA, mas estou aberta a possibilidades de aprendizagem em outras posições no Time de Desenvolvimento.
+                </p>
+               </div>
+               <div id="conhecimentos">
+                <img src="./Imagens/programando.jpg" width="30%">
+                <li>
+                    Android Studio;<br>
+                    Appium;<br>
+                    Automação de testes Web e Mobile;<br>
+                    BDD;<br>
+                    Capybara;<br>
+                    Cucumber;<br>
+                    Java;<br>
+                    JavaScript;<br>
+                    Python;<br>
+                    Ruby;<br>
+                    Selenium
+                </li>
+            </div> 
+            <div id="hobbies">
+                <img src="./Imagens/hobbies.jpg" width="40%">
+                <li>
+                   Conversar sobre diversos assuntos;<br>
+                   Dançar;<br>
+                   Estudar;<br>
+                   Viajar;              
+                </li>
+            </div>
+         </div>
+        </div> 
+            <div class="form">
+            <div>
+                <p>Deixe seu contato</p>
+            </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email :)">
+                    <button>Enviar</button>
+                </form>    
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout(){
+            var arrow = document.getElementById("animation");
+            arrow.classList.toggle("rotate");
+            var display = document.getElementById("about");
+            display.classList.toggle("active");
+            
+            
+        }
+    </script>
+    </body>
+</html>
